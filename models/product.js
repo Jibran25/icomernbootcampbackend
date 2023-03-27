@@ -1,4 +1,4 @@
-const mongoose = require('monngose');
+const mongoose = require('mongoose');
 const {ObjectId} = mongoose.Schema;
 
 const productSchema = new mongoose.Schema({
@@ -8,7 +8,7 @@ const productSchema = new mongoose.Schema({
         required:true,
         maxlenght:32
     },
-    discription:{
+    description:{
         type:String,
         trim:true,
         required:true,
@@ -26,7 +26,7 @@ const productSchema = new mongoose.Schema({
         required:true
     },
     stock:{
-        typ:Number
+        type:Number
     },
     sold:{
         type:Number,
